@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact — My Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="brand">My Portfolio</a>
+      <button id="nav-toggle" class="nav-toggle" aria-label="Open navigation">☰</button>
+      <nav id="site-nav" class="site-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Contact Me</h1>
+    <p>Use the form below to send a message. This example uses client-side validation only.</p>
+
+    <form id="contact-form" class="contact-form" novalidate>
+      <label>
+        Name
+        <input type="text" name="name" id="name" required>
+      </label>
+      <label>
+        Email
+        <input type="email" name="email" id="email" required>
+      </label>
+      <label>
+        Message
+        <textarea name="message" id="message" rows="6" required></textarea>
+      </label>
+      <button type="submit" class="btn">Send Message</button>
+      <p id="form-feedback" class="form-feedback" aria-live="polite"></p>
+    </form>
+    <p style="margin-top:1rem">Or email me directly: <a href="mailto:aliasgarhuseynov78@gmail.com">aliasgarhuseynov78@gmail.com</a></p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> [Your Name].</p>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

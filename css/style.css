@@ -63,6 +63,25 @@ html,body{height:100%;margin:0;font-family:Inter, "Segoe UI", Roboto, Arial, san
 /* Small utilities */
 .muted{color:var(--muted)}
 
+/* Big interactive yellow badge for 'In process' */
+.in-process-badge {
+  display: inline-block;
+  font-size: 1.5rem;
+  font-weight: bold;
+  background: #ffe600;
+  color: #222;
+  padding: 0.6em 1.2em;
+  border-radius: 1em;
+  box-shadow: 0 4px 16px rgba(255,230,0,0.18);
+  margin-top: 0.7em;
+  cursor: pointer;
+  transition: transform 0.18s, box-shadow 0.18s;
+}
+.in-process-badge:hover {
+  transform: scale(1.08) rotate(-2deg);
+  box-shadow: 0 8px 32px rgba(255,230,0,0.28);
+}
+
 /* Responsive */
 @media (max-width:900px){
   .hero{flex-direction:column;align-items:center;text-align:center;padding:3rem 0}
